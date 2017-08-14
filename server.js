@@ -57,7 +57,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(createTemp(articleOne));
+  res.send(createTemp(articleOne));
 });
 
 app.get('/article-two', function (req, res) {
