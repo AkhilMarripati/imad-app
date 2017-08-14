@@ -1,0 +1,28 @@
+<html>
+    <title>
+        Article 3.
+    </title>
+    <body>
+        <div>
+            <a href="/">Home</a>
+        </div>
+        <hr/>
+        <h3>
+            Article 3
+        </h3>
+        <div>
+            14 Aug 2017.
+        </div>
+        <div>
+            <p>
+                Hi I am Akhil.
+            </p>
+            <p>
+                How are you?
+            </p>
+            <p>
+                Keep smiling.
+            </p>
+        </div>
+     </body>
+</html>
