@@ -5,7 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articleOne = {
+var articles =
+{
+    var articleOne : {
     title: 'Article one',
     heading: 'Article one',
     date: 'sep 5',
@@ -18,6 +20,36 @@ var articleOne = {
             <p>
                 Keep smiling.
             </p>`
+    },
+    var articleTwo : {
+        title: 'Article 2',
+        heading: 'Article 2',
+        date: 'sep 5',
+        content:`<p>
+                    Hi I am Akhil.
+                </p>
+                <p>
+                    How are you?
+                </p>
+                <p>
+                    Keep smiling.
+                </p>`
+    },
+    var articleThree : {
+        title: 'Article 3',
+        heading: 'Article 3',
+        date: 'sep 5',
+        content:`<p>
+                    Hi I am Akhil.
+                </p>
+                <p>
+                    How are you?
+                </p>
+                <p>
+                    Keep smiling.
+                </p>`
+    }
+    
 };
 function createTemp(data)
 {
@@ -56,8 +88,8 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createTemp(articleOne));
+app.get('/articleName', function (req, res) {
+  res.send(createTemp(articles[articleName]));
 });
 
 app.get('/article-two', function (req, res) {
